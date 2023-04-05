@@ -35,7 +35,9 @@ function renderprojects() {
     toDisplay += `
     <div class="mini-sec">
         <div class="img">
-           <img src="${work.image}">
+           <a href = "${work.link}">
+            <img src="${work.image}">
+           </a>
            <div class="layer"></div>
         </div>
         

@@ -145,21 +145,27 @@ h3 > a {
 .mini-sec {
   margin-bottom: 8em;
 }
-.mini-sec > .img > img {
+.mini-sec > .img > a > img {
   width: 30vw;
   position: relative;
+  filter: brightness(0.7);
+  transition: 0.3s;
+}
+.mini-sec > .img > a > img:hover {
+  filter: brightness(1);
 }
 .layer {
-  background-color: rgba(83, 211, 185, 0.4);
+  pointer-events: none;
+  /* background-color: rgba(83, 211, 185, 0.4); */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.4s ease-out;
   height: 100%;
 }
 .img .layer:hover {
   background: rgba(83, 211, 185, 0.1);
-  transition: 0.4s ease-out;
   cursor: pointer;
 }
 .project-details {
